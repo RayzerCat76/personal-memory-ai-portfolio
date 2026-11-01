@@ -16,4 +16,16 @@ python demo_memory_loop.py
 
 The demonstration uses a temporary database and the deterministic heuristic provider, so it downloads no model and stores no personal data. It prints the answer's evidence count before and after a candidate memory is confirmed. To explore the API, start `uvicorn app.main:app --reload` from `backend` and open `http://127.0.0.1:8000/docs`.
 
+## Try the browser prototype
+
+The browser-local memory mode needs Node.js and no backend or model download. From this repository:
+
+```sh
+cd frontend
+npm ci
+NEXT_PUBLIC_BROWSER_MEMORY_ENABLED=1 npm run dev -- --port 3000
+```
+
+Open **http://localhost:3000** (use `localhost` for the Next.js development server). Select **Open my memory** if the introduction appears. Under **Anything worth remembering?**, enter a sample preference such as “I prefer code review notes with one concrete before-and-after example.” Select **Remember**, then **Keep** on the proposed memory. Ask “How should you write my code review notes?” in the message box. The reply should cite the confirmed memory and expose its original evidence. This mode stores sample data in the browser; use fictional or disposable text when reviewing it.
+
 See [PORTFOLIO.md](PORTFOLIO.md) for the design process, current scope, limitations, and contribution credits. See [THIRD_PARTY.md](THIRD_PARTY.md) for frameworks, model runtimes, and bundled browser runtime attribution.

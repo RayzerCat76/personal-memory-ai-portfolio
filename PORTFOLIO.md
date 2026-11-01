@@ -8,7 +8,7 @@ The first backend loop accepted a message, extracted a candidate memory, stored 
 
 ## What works and what is still being developed
 
-On 1 November 2026, the exported backend snapshot passed all ten focused memory-loop tests. The included `backend/demo_memory_loop.py` demonstrates that an unconfirmed candidate provides no evidence and a confirmed one can support an answer. This test does not establish that every browser, mobile, desktop, or optional voice path works on a reviewer's device. Personalization and final recipient delivery remain outside this portfolio snapshot.
+On 1 November 2026, the exported backend snapshot passed all ten focused memory-loop tests. The included `backend/demo_memory_loop.py` demonstrates that an unconfirmed candidate provides no evidence and a confirmed one can support an answer. The browser-local mode was also exercised on `localhost`: a sample preference was proposed, confirmed with **Keep**, and cited in the answer to a follow-up question. The [README](README.md#try-the-browser-prototype) gives the exact steps. These checks do not establish that every browser, mobile, desktop, or optional voice path works on a reviewer's device. Personalization and final recipient delivery remain outside this portfolio snapshot.
 
 The source is a clean export of private `main` at commit `be977ce`. It retains the current application code while excluding local databases, secrets, recipient details, and private project notes. The extra demo and portfolio documentation were added for reviewers; the product source was not modified.
 
