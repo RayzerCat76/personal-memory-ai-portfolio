@@ -1,0 +1,25 @@
+{
+  "name": "personal-memory-ai-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "build:desktop": "PMA_DESKTOP_STANDALONE=1 next build",
+    "package:desktop": "node scripts/package-desktop.mjs"
+  },
+  "dependencies": {
+    "@wllama/wllama": "^3.6.1",
+    "@wllama/wllama-compat": "^3.6.1",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "typescript": "latest"
+  }
+}

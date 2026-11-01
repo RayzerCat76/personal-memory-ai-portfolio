@@ -1,0 +1,261 @@
+.milestonePreview {
+  margin: 18px 0 8px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.previewLabel {
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.milestoneRow {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr);
+  gap: 10px;
+  min-height: 44px;
+}
+
+.rail {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.dot {
+  position: relative;
+  z-index: 1;
+  width: 9px;
+  height: 9px;
+  margin-top: 5px;
+  border: 1px solid #9c968c;
+  border-radius: 50%;
+  background: var(--panel);
+}
+
+.line {
+  position: absolute;
+  top: 14px;
+  bottom: -5px;
+  width: 1px;
+  background: var(--line);
+}
+
+.complete {
+  border-color: var(--accent);
+  background: var(--accent);
+}
+
+.inProgress {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.planned {
+  border-color: #8f897f;
+  background: var(--panel);
+}
+
+.milestoneContent {
+  min-width: 0;
+  padding-bottom: 14px;
+}
+
+.milestoneHeading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.milestoneHeading strong {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.milestoneHeading small {
+  flex: none;
+  color: var(--muted);
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.milestoneTasks {
+  display: grid;
+  gap: 4px;
+  margin-top: 7px;
+}
+
+.milestoneTask {
+  display: grid;
+  grid-template-columns: 14px minmax(0, 1fr) auto;
+  gap: 6px;
+  align-items: baseline;
+  color: #5f5a53;
+  font-size: 11px;
+}
+
+.taskMark {
+  color: var(--muted);
+  text-align: center;
+}
+
+.taskTitle {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.doneTask .taskTitle {
+  color: var(--muted);
+  text-decoration: line-through;
+}
+
+.taskDue {
+  color: var(--muted);
+  font-size: 9px;
+  white-space: nowrap;
+}
+
+.noTasks {
+  display: block;
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.linkedNotesPreview {
+  margin: 14px 0 8px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+
+.linkedNoteRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 3px 0;
+  font-size: 12px;
+}
+
+.linkedNoteRow span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.linkedNoteRow small,
+.moreLinkedNotes {
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.linkedNoteRow small {
+  flex: none;
+  text-align: right;
+}
+
+.projectTimeline {
+  margin: 22px 0;
+  padding: 18px 0 4px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.timelineTitleRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.timelineTitleRow h3 { margin: 0; }
+.timelineTitleRow small,
+.timelineExplanation { color: var(--muted); font-size: 10px; }
+.timelineGroup { margin-top: 16px; }
+.timelineExplanation { display: block; margin: -4px 0 10px; }
+
+.timelineRow {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr);
+  gap: 10px;
+  min-height: 50px;
+}
+
+.timelineRail { position: relative; display: flex; justify-content: center; }
+.timelineDot {
+  position: relative; z-index: 1; width: 9px; height: 9px; margin-top: 5px;
+  border: 1px solid var(--accent); border-radius: 50%; background: var(--panel);
+}
+.timelineLine { position: absolute; top: 14px; bottom: -5px; width: 1px; background: var(--line); }
+.timelineContent { min-width: 0; padding-bottom: 14px; }
+.timelineHeading { display: flex; align-items: baseline; justify-content: space-between; gap: 14px; }
+.timelineHeading strong { min-width: 0; overflow-wrap: anywhere; font-size: 13px; font-weight: 600; }
+.timelineHeading time { flex: none; color: var(--muted); font-size: 10px; white-space: nowrap; }
+.timelineMeta { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px; color: var(--muted); font-size: 10px; }
+
+@media (max-width: 600px) {
+  .timelineTitleRow,
+  .timelineHeading {
+    display: grid;
+    gap: 2px;
+  }
+
+  .timelineHeading time { white-space: normal; }
+
+  .linkedNoteRow {
+    display: grid;
+    gap: 2px;
+  }
+
+  .linkedNoteRow small {
+    text-align: left;
+  }
+
+  .milestoneHeading {
+    display: grid;
+    gap: 2px;
+  }
+
+  .milestoneHeading small {
+    white-space: normal;
+  }
+
+  .milestoneTask {
+    grid-template-columns: 14px minmax(0, 1fr);
+  }
+
+  .taskDue {
+    grid-column: 2;
+    white-space: normal;
+  }
+}
+
+.syncConflictReview {
+  margin: 18px 0;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.syncConflictReview > p { color: var(--muted); font-size: 12px; }
+.syncConflictReview details { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line); }
+.syncConflictReview summary { cursor: pointer; font-weight: 600; }
+.syncConflictVersions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 12px;
+}
+.syncConflictVersions > div { min-width: 0; padding: 10px; border: 1px solid var(--line); border-radius: 6px; }
+.syncConflictVersions strong,
+.syncConflictVersions span { display: block; overflow-wrap: anywhere; }
+.syncConflictVersions strong { margin-bottom: 5px; font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+.syncConflictVersions p { margin-bottom: 0; overflow-wrap: anywhere; white-space: pre-wrap; font-size: 11px; }
+@media (max-width: 600px) {
+  .syncConflictVersions { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "example-interest",
+    "type": "interest",
+    "content": "Likes building things with technology",
+    "note": "Replace this with a real observation and explain why you think it is true.",
+    "confidence": 0.45,
+    "importance": 0.65,
+    "subject": "technology"
+  },
+  {
+    "id": "example-inside-joke",
+    "type": "inside_joke",
+    "content": "There is an inside joke here that only the two of you understand",
+    "note": "Replace with the actual context, not just the punchline.",
+    "confidence": 0.4,
+    "importance": 0.75,
+    "subject": "inside joke"
+  }
+]
