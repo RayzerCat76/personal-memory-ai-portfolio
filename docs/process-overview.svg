@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+    <style>
+      .eyebrow { font: 700 21px Arial, Helvetica, sans-serif; letter-spacing: 4px; }
+      .title { font: 700 50px Arial, Helvetica, sans-serif; fill: #f1f5fb; }
+      .subtitle { font: 26px Arial, Helvetica, sans-serif; fill: #b9c8da; }
+      .number { font: 700 22px Arial, Helvetica, sans-serif; fill: #081522; }
+      .date { font: 700 18px Arial, Helvetica, sans-serif; letter-spacing: 1.5px; }
+      .cardtitle { font: 700 29px Arial, Helvetica, sans-serif; fill: #f1f5fb; }
+      .body { font: 23px Arial, Helvetica, sans-serif; fill: #d2dce8; }
+      .evidence { font: 17px Arial, Helvetica, sans-serif; fill: #a9bbce; }
+      .footer { font: 20px Arial, Helvetica, sans-serif; fill: #b9c8da; }
+    </style>
+    <rect width="1600" height="900" fill="#081522"/>
+    <rect x="60" y="61" width="85" height="8" rx="4" fill="#8dc8ae"/>
+    <text x="60" y="112" class="eyebrow" fill="#8dc8ae">BUILD PROCESS / EVIDENCE MAP</text>
+    <text x="60" y="170" class="title">Personal Memory AI: a confirmation gate</text>
+    <text x="60" y="209" class="subtitle">Original trust rule → visible review → evidence-backed answer</text>
+
+    <rect x="60" y="225" width="460" height="520" rx="24" fill="#142436" stroke="#31445a" stroke-width="2"/>
+    <circle cx="107" cy="274" r="18" fill="#8dc8ae"/>
+    <text x="107" y="282" text-anchor="middle" class="number">1</text>
+    <text x="94" y="330" class="date" fill="#8dc8ae">BACKEND LOOP · 31 AUG</text>
+    <text x="94" y="363" class="cardtitle">Keep claims provisional</text>
+    <text x="94" y="394" class="body">A message can suggest a memory,</text><text x="94" y="432" class="body">but extraction alone does not make</text><text x="94" y="470" class="body">the claim trusted answer evidence.</text>
+    <line x1="94" y1="654" x2="486" y2="654" stroke="#31445a"/>
+    <text x="94" y="686" class="evidence">backend/app/service.py · test_memory_loop.py</text>
+
+    <rect x="570" y="225" width="460" height="520" rx="24" fill="#142436" stroke="#31445a" stroke-width="2"/>
+    <circle cx="617" cy="274" r="18" fill="#8dc8ae"/>
+    <text x="617" y="282" text-anchor="middle" class="number">2</text>
+    <text x="604" y="330" class="date" fill="#8dc8ae">BROWSER MODE · 10 SEP</text>
+    <text x="604" y="363" class="cardtitle">Put the person in control</text>
+    <text x="604" y="394" class="body">The browser shows a candidate</text><text x="604" y="432" class="body">waiting for Keep or Not me.</text><text x="604" y="470" class="body">A sample works without private</text><text x="604" y="508" class="body">data or a model download.</text>
+    <line x1="604" y1="654" x2="996" y2="654" stroke="#31445a"/>
+    <text x="604" y="686" class="evidence">frontend/src/lib/browser-memory.ts</text>
+
+    <rect x="1080" y="225" width="460" height="520" rx="24" fill="#142436" stroke="#31445a" stroke-width="2"/>
+    <circle cx="1127" cy="274" r="18" fill="#8dc8ae"/>
+    <text x="1127" y="282" text-anchor="middle" class="number">3</text>
+    <text x="1114" y="330" class="date" fill="#8dc8ae">PORTFOLIO CHECK · 1 NOV</text>
+    <text x="1114" y="363" class="cardtitle">Show the source</text>
+    <text x="1114" y="394" class="body">Ten focused backend tests passed.</text><text x="1114" y="432" class="body">After Keep, the sample answer</text><text x="1114" y="470" class="body">cites the preference and reveals</text><text x="1114" y="508" class="body">its original evidence.</text>
+    <line x1="1114" y1="654" x2="1506" y2="654" stroke="#31445a"/>
+    <text x="1114" y="686" class="evidence">browser demo · backend focused tests</text>
+
+    <path d="M530 480 l27 0 m-10 -10 l10 10 -10 10 M1040 480 l27 0 m-10 -10 l10 10 -10 10"
+          stroke="#8dc8ae" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <text x="60" y="820" class="footer">Dates come from private source history. The public repository is a sanitized source snapshot.</text>
+    <text x="60" y="854" class="footer">Source files, tests, and limits: see docs/BUILD_PROCESS.md in the project repository.</text>
+  </svg>

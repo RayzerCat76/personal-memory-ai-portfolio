@@ -6,6 +6,8 @@
 
 The first backend loop accepted a message, extracted a candidate memory, stored it as unconfirmed, allowed confirmation or rejection, searched approved memories, and returned an answer with supporting memory IDs. The source has since grown into a browser/PWA and desktop prototype with richer study, evidence, context, and local-model features. The quick demonstration in this public snapshot exercises the original trust boundary without requiring private data or a model download.
 
+The [build-process map](docs/BUILD_PROCESS.md) points from that first trust rule to the current backend and browser code.
+
 ## What works and what is still being developed
 
 On 1 November 2026, the exported backend snapshot passed all ten focused memory-loop tests. The included `backend/demo_memory_loop.py` demonstrates that an unconfirmed candidate provides no evidence and a confirmed one can support an answer. The browser-local mode was also exercised on `localhost`: a sample preference was proposed, confirmed with **Keep**, and cited in the answer to a follow-up question. The [README](README.md#try-the-browser-prototype) gives the exact steps. These checks do not establish that every browser, mobile, desktop, or optional voice path works on a reviewer's device. Personalization and final recipient delivery remain outside this portfolio snapshot.
